@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Weather App</h1>
+    <p class="subtitle">Type a city to see the weather right now.</p>
+
+    <div class="search">
+      <label for="cityInput" class="visually-hidden">City name</label>
+      <input type="text" id="cityInput" placeholder="e.g. Delhi, London, Tokyo">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="result" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
