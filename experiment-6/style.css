@@ -1,0 +1,71 @@
+body {
+  background: #f6f4fb;
+  color: #2b2b2b;
+}
+
+/* navigation */
+.site-nav { background: #3a1f6b; }
+.navbar-brand { font-weight: bold; letter-spacing: 0.5px; }
+
+/* hero banner */
+.hero {
+  background: linear-gradient(135deg, #5b2d9e, #2d1457);
+  padding: 90px 0;
+}
+.hero h1 { font-size: 3rem; font-weight: bold; }
+
+/* headings */
+.section-title {
+  color: #3a1f6b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* post cards */
+.post-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.post-card:hover { transform: translateY(-5px); }
+.card-color { height: 110px; }
+.color-one   { background: linear-gradient(135deg, #8e44ad, #5b2d9e); }
+.color-two   { background: linear-gradient(135deg, #3498db, #1f618d); }
+.color-three { background: linear-gradient(135deg, #1abc9c, #148f77); }
+.color-four  { background: linear-gradient(135deg, #e67e22, #b9560d); }
+.post-date { font-size: 0.85rem; color: #6c6c6c; margin-bottom: 4px; }
+
+/* sidebar */
+.sidebar-box {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+.sidebar-box h2 { color: #3a1f6b; font-weight: bold; }
+.tag { background: #5b2d9e; margin-right: 4px; font-size: 0.85rem; }
+
+/* footer */
+.site-footer {
+  background: #2d1457;
+  color: #e8dcf7;
+  padding: 25px 0;
+}
+
+/* ===== media queries (your own, besides Bootstrap's) ===== */
+
+/* tablets */
+@media (max-width: 992px) {
+  .hero { padding: 70px 0; }
+  .hero h1 { font-size: 2.3rem; }
+}
+
+/* phones */
+@media (max-width: 576px) {
+  .hero { padding: 50px 0; }
+  .hero h1 { font-size: 1.7rem; }
+  .card-color { height: 80px; }
+}
