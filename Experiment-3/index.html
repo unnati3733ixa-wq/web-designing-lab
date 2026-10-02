@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 420px; margin: 40px auto; }
+    #taskInput { width: 70%; padding: 8px; }
+    button { padding: 8px 12px; cursor: pointer; }
+    li { display: flex; justify-content: space-between; padding: 8px 0; }
+    li span { cursor: pointer; }
+    li.done span { text-decoration: line-through; color: gray; }
+  </style>
+</head>
+<body>
+  <h1>My Tasks</h1>
+  <input type="text" id="taskInput" placeholder="Add a task...">
+  <button id="addBtn">Add</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    const input = document.getElementById("taskInput");
+    const list = document.getElementById("taskList");
+
+    function addTask() {
+      const text = input.value.trim();
+      if (text === "") return;
+
+      const li = document.createElement("li");
+
+      const span = document.createElement("span");
+      span.textContent = text;
+      // clicking the task text marks it done or not done
+      span.addEventListener("click", () => li.classList.toggle("done"));
+
+      const del = document.createElement("button");
+      del.textContent = "Delete";
+      del.addEventListener("click", () => li.remove());
+
+      li.appendChild(span);
+      li.appendChild(del);
+      list.appendChild(li);
+      input.value = "";
+    }
+
+    document.getElementById("addBtn").addEventListener("click", addTask);
+    input.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") addTask();
+    });
+  </script>
+</body>
+</html>
