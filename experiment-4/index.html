@@ -4,10 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafe Blue | Fresh Coffee, Sandwiches and Snacks</title>
-  <meta name="description" content="Cafe Blue is a cosy cafe serving fresh coffee, sandwiches and desserts. A quiet place to study or meet friends. Open daily, 9 AM to 9 PM.">
-  <meta name="keywords" content="cafe, coffee, sandwiches, study cafe, snacks">
+  <meta name="description" content="Cafe Blue serves fresh coffee, sandwiches and snacks. See our menu and opening hours: open every day, 9 AM to 9 PM.">
+  <meta name="keywords" content="cafe, coffee, sandwiches, snacks, latte, cappuccino">
   <meta name="author" content="Unnati Bhatt">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3b2a20">
+  <link rel="canonical" href="https://unnati3733ixa-wq.github.io/web-designing-lab/experiment-4/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cafe Blue | Fresh Coffee, Sandwiches and Snacks">
+  <meta property="og:description" content="Fresh coffee, sandwiches and snacks. Open every day, 9 AM to 9 PM.">
+  <meta property="og:url" content="https://unnati3733ixa-wq.github.io/web-designing-lab/experiment-4/">
+  <meta property="og:image" content="https://unnati3733ixa-wq.github.io/web-designing-lab/experiment-4/coffee-cup.jpg">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Cafe Blue",
+    "description": "Fresh coffee, sandwiches and snacks.",
+    "email": "cafeblue@example.com",
+    "openingHours": "Mo-Su 09:00-21:00"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -17,58 +35,42 @@
     <nav aria-label="Main menu">
       <a href="#welcome">Home</a>
       <a href="#menu">Menu</a>
-      <a href="#visit">Visit Us</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="main-content">
-    <section id="welcome" class="hero">
+    <section id="welcome" class="hero" aria-labelledby="welcome-title">
       <div class="hero-text">
-        <h1>Cafe Blue</h1>
-        <p class="tagline">Fresh coffee, warm snacks and a quiet corner to study.</p>
+        <h1 id="welcome-title">Welcome to Cafe Blue</h1>
+        <p class="tagline">We sell fresh coffee, sandwiches and snacks.</p>
         <a class="button" href="#menu">See our menu</a>
       </div>
-      <img src="coffe cup.jpg" alt="A steaming cup of coffee on a wooden table">
+      <img src="coffee-cup.jpg" alt="A steaming cup of coffee on a wooden table">
     </section>
 
-    <section id="menu">
-      <h2>Our Menu</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Latte</h3>
-          <p>Smooth espresso with steamed milk.</p>
-        </article>
-        <article class="card">
-          <h3>Cappuccino</h3>
-          <p>Rich coffee topped with soft foam.</p>
-        </article>
-        <article class="card">
-          <h3>Cold Coffee</h3>
-          <p>Chilled, creamy and just sweet enough.</p>
-        </article>
-        <article class="card">
-          <h3>Veg Sandwich</h3>
-          <p>Grilled with fresh veggies and cheese.</p>
-        </article>
-        <article class="card">
-          <h3>Brownie</h3>
-          <p>Warm, fudgy and chocolatey.</p>
-        </article>
-      </div>
+    <section id="menu" aria-labelledby="menu-title">
+      <h2 id="menu-title">Our Menu</h2>
+      <ul class="cards">
+        <li class="card"><h3>Latte</h3><p>Smooth espresso with steamed milk.</p></li>
+        <li class="card"><h3>Cappuccino</h3><p>Rich coffee topped with soft foam.</p></li>
+        <li class="card"><h3>Cold Coffee</h3><p>Chilled, creamy and just sweet enough.</p></li>
+        <li class="card"><h3>Veg Sandwich</h3><p>Grilled with fresh veggies and cheese.</p></li>
+        <li class="card"><h3>Brownie</h3><p>Warm, fudgy and chocolatey.</p></li>
+      </ul>
     </section>
 
-    <section id="visit" class="visit-box">
-      <h2>Visit Us</h2>
-      <p>Open every day, 9 AM to 9 PM.</p>
-      <p>Bring a book, a laptop or a friend.</p>
+    <section id="visit" class="visit-box" aria-labelledby="visit-title">
+      <h2 id="visit-title">Visit Us</h2>
+      <p>Open every day, <time datetime="09:00">9 AM</time> to <time datetime="21:00">9 PM</time>.</p>
     </section>
   </main>
 
-  <footer>
-    <p>Contact us at
-      <a href="mailto:cafeblue@example.com">cafeblue@example.com</a>
-    </p>
-    <p>© 2026 Cafe Blue</p>
+  <footer id="contact">
+    <address>
+      Contact us at <a href="mailto:cafeblue@example.com">cafeblue@example.com</a>
+    </address>
+    <p>&copy; 2026 Cafe Blue</p>
   </footer>
 </body>
 </html>

@@ -106,3 +106,6 @@ footer a { color: #7a3f00; }
   .hero { padding: 25px; }
   .hero h1 { font-size: 2.2rem; }
 }
+.cards { list-style: none; }
+address { font-style: normal; }
+a:focus-visible { outline: 3px solid #ffd479; outline-offset: 3px; }
